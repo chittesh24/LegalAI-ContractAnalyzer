@@ -263,6 +263,8 @@ Provide accurate English translation:"""
         return self._call_llm(prompt)
     
     def _call_llm(self, prompt: str, max_tokens: int = MAX_TOKENS) -> str:
+        if not getattr(self, "client", None):
+            return "LLM service unavailable."
         """
         Call the configured LLM provider
         
