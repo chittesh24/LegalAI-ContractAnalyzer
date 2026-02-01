@@ -76,23 +76,44 @@ def show_template_section():
             submit = st.form_submit_button("Generate Template", type="primary", use_container_width=True)
             
             if submit:
-                parties = {
-                    "client": client_name,
-                    "client_address": client_address,
-                    "provider": provider_name,
-                    "provider_address": provider_address
-                }
-                
-                terms = {
-                    "date": start_date.strftime("%B %d, %Y"),
-                    "start_date": start_date.strftime("%B %d, %Y"),
-                    "duration": duration,
-                    "payment": payment,
-                    "payment_days": str(payment_days),
-                    "termination_notice": str(termination_notice),
-                    "jurisdiction": jurisdiction,
-                    "scope": scope if scope else "[DESCRIBE SERVICES IN DETAIL]"
-                }
+    parties = {
+        "client": client_name,
+        "client_address": client_address,
+        "provider": provider_name,
+        "provider_address": provider_address
+    }
+
+    terms = {
+        "date": start_date.strftime("%B %d, %Y"),
+        "start_date": start_date.strftime("%B %d, %Y"),
+        "duration": duration,
+        "payment": payment,
+        "payment_days": str(payment_days),
+        "termination_notice": str(termination_notice),
+        "jurisdiction": jurisdiction,
+        "scope": scope if scope else "[DESCRIBE SERVICES IN DETAIL]"
+    }
+
+    template = template_gen.generate_service_agreement(parties, terms)
+
+    if isinstance(template, str) and template.strip():
+        st.success("✅ Template Generated!")
+
+        safe_name = (client_name or "client").replace(" ", "_")
+
+        st.download_button(
+            label="📥 Download Service Agreement",
+            data=template.encode("utf-8"),
+            file_name=f"service_agreement_{safe_name}.txt",
+            mime="text/plain"
+        )
+
+        with st.expander("📄 Preview Template"):
+            st.text(template)
+
+    else:
+        st.error("Template generation failed.")
+
                 
                 template = template_gen.generate_service_agreement(parties, terms)
 
