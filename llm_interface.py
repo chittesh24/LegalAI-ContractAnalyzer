@@ -22,9 +22,11 @@ class LLMInterface:
                 import anthropic
 
                 if not anthropic_key:
-                    raise ValueError("Anthropic API key missing")
+                    print("WARNING: Anthropic API key missing. LLM disabled.")
+                    self.client = None
+                else:
+                    self.client = anthropic.Anthropic(api_key=str(anthropic_key))
 
-                self.client = anthropic.Anthropic(api_key=anthropic_key)
 
             except ImportError:
                 raise ImportError("anthropic package not installed. Run: pip install anthropic")
@@ -34,9 +36,10 @@ class LLMInterface:
                 import openai
 
                 if not openai_key:
-                    raise ValueError("OpenAI API key missing")
-
-                self.client = openai.OpenAI(api_key=openai_key)
+                    print("WARNING: OpenAI API key missing. LLM disabled.")
+                    self.client = None
+                else:
+                    self.client = openai.OpenAI(api_key=str(openai_key))
 
             except ImportError:
                 raise ImportError("openai package not installed. Run: pip install openai")
