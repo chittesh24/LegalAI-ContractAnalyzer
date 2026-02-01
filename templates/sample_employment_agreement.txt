@@ -1,0 +1,66 @@
+EMPLOYMENT AGREEMENT
+
+This Employment Agreement is made on March 1, 2024
+
+BETWEEN:
+TechCorp India Pvt. Ltd., registered office at Pune, Maharashtra (hereinafter called "Employer")
+
+AND:
+Mr. Rajesh Kumar, residing at Delhi (hereinafter called "Employee")
+
+TERMS AND CONDITIONS:
+
+1. POSITION AND DUTIES
+The Employee is appointed as Senior Software Engineer and shall perform duties as assigned by the Employer from time to time.
+
+2. COMPENSATION
+2.1 The Employee shall be paid a monthly salary of Rs. 1,20,000 (Rupees One Lakh Twenty Thousand).
+2.2 Annual performance bonus may be provided at the sole discretion of the Employer.
+
+3. PROBATION PERIOD
+The Employee shall be on probation for 6 months. The Employer may terminate employment during probation without notice or compensation.
+
+4. WORKING HOURS
+The Employee shall work a minimum of 45 hours per week. Additional hours may be required without overtime compensation as this is a managerial position.
+
+5. LEAVE POLICY
+The Employee is entitled to 18 days of paid leave per year, subject to Employer approval.
+
+6. INTELLECTUAL PROPERTY
+All work product, inventions, and creative works developed by the Employee during employment shall belong exclusively to the Employer, including work done outside office hours or using personal resources.
+
+7. CONFIDENTIALITY AND NON-DISCLOSURE
+7.1 The Employee shall maintain confidentiality of all Employer information perpetually.
+7.2 This obligation survives termination of employment indefinitely.
+
+8. NON-COMPETE AND NON-SOLICITATION
+8.1 For 2 years after termination, the Employee shall not work for any competitor of the Employer.
+8.2 The Employee shall not solicit Employer's clients or employees for 3 years post-termination.
+8.3 This restriction applies pan-India and to any related technology sector.
+
+9. TERMINATION
+9.1 The Employer may terminate this employment immediately without cause or notice.
+9.2 The Employee must provide 3 months notice to resign.
+9.3 The Employer may accept resignation immediately without paying notice period salary.
+
+10. POST-TERMINATION OBLIGATIONS
+Upon termination, the Employee shall:
+- Return all company property immediately
+- Delete all company data from personal devices
+- Not make any negative statements about the Employer
+- Be available for transition support for up to 60 days without compensation
+
+11. PERSONAL GUARANTEE
+The Employee personally guarantees that all project deliverables will meet quality standards. Any client losses due to the Employee's work shall be recovered from the Employee.
+
+12. AMENDMENT
+The Employer reserves the right to modify employment terms including salary, position, and location with 15 days notice.
+
+13. JURISDICTION
+This agreement is governed by Indian laws and courts of Pune shall have exclusive jurisdiction.
+
+ACCEPTANCE:
+I have read and understood all terms and accept them unconditionally.
+
+Employee Signature: _______________
+Date: March 1, 2024

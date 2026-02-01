@@ -1,0 +1,61 @@
+VENDOR SERVICE AGREEMENT
+
+This Agreement is entered into on January 15, 2024
+
+BETWEEN:
+ABC Technologies Pvt. Ltd., a company incorporated under the Companies Act, 2013, having its registered office at Mumbai, Maharashtra (hereinafter referred to as "Client")
+
+AND:
+XYZ Solutions Private Limited, having its office at Bangalore, Karnataka (hereinafter referred to as "Vendor")
+
+1. SCOPE OF SERVICES
+The Vendor agrees to provide software development services to the Client as per the specifications provided by the Client from time to time.
+
+2. PAYMENT TERMS
+2.1 The Client shall pay the Vendor a monthly fee of Rs. 5,00,000 (Rupees Five Lakhs only).
+2.2 Payment shall be made within 60 days of invoice submission.
+2.3 In case of delay beyond 60 days, a penalty of 2% per month shall be applicable on the outstanding amount.
+
+3. TERM AND TERMINATION
+3.1 This Agreement shall commence on February 1, 2024 and continue for a period of 24 months.
+3.2 This Agreement shall automatically renew for successive periods of 12 months unless either party provides written notice 90 days prior to expiry.
+3.3 The Client may terminate this Agreement at its sole discretion with 30 days written notice without providing any reason.
+3.4 The Vendor may only terminate with 180 days notice and upon payment of liquidated damages equal to 6 months fees.
+
+4. INTELLECTUAL PROPERTY
+4.1 All intellectual property rights, including but not limited to copyrights, patents, and trade secrets developed during the term of this Agreement shall vest exclusively with the Client.
+4.2 The Vendor assigns all present and future IP rights to the Client without any additional compensation.
+
+5. INDEMNIFICATION
+5.1 The Vendor shall indemnify and hold harmless the Client from any and all claims, damages, losses, and expenses arising out of the Vendor's performance or non-performance under this Agreement.
+5.2 The Vendor's liability under this clause shall be unlimited and shall survive the termination of this Agreement.
+
+6. CONFIDENTIALITY
+6.1 The Vendor shall maintain strict confidentiality of all Client information for a period of 5 years after termination.
+6.2 Breach of confidentiality shall result in immediate termination and liquidated damages of Rs. 50,00,000.
+
+7. NON-COMPETE
+7.1 During the term of this Agreement and for a period of 3 years thereafter, the Vendor shall not engage in any business that competes with the Client's business in India.
+7.2 The Vendor shall not solicit or provide services to any client of the Client during this period.
+
+8. FORCE MAJEURE
+Acts of God, war, or government regulations shall constitute force majeure events, provided the Client determines such events are beyond reasonable control.
+
+9. DISPUTE RESOLUTION
+9.1 Any disputes arising out of this Agreement shall be resolved through arbitration in Mumbai.
+9.2 The arbitration shall be conducted in accordance with the Arbitration and Conciliation Act, 1996.
+
+10. AMENDMENTS
+The Client may modify or amend any terms of this Agreement at its sole discretion by providing written notice to the Vendor. Such amendments shall become effective immediately upon notice.
+
+11. GOVERNING LAW
+This Agreement shall be governed by and construed in accordance with the laws of India. The courts of Mumbai shall have exclusive jurisdiction.
+
+12. ENTIRE AGREEMENT
+This Agreement constitutes the entire agreement between the parties and supersedes all prior understandings.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement on the date first written above.
+
+For ABC Technologies Pvt. Ltd.          For XYZ Solutions Private Limited
+_____________________                    _____________________
+Authorized Signatory                     Authorized Signatory

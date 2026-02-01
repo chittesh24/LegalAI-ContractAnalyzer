@@ -1,0 +1,54 @@
+# Environment
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Uploads & Outputs (runtime generated)
+uploads/
+outputs/
+audit_logs/
+
+# Data
+*.db
+*.sqlite
+habits.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation (for GitHub - keep essential docs in root)
+docs/DEPLOYMENT_GUIDE.md
+docs/GITHUB_SETUP.md
+docs/VIDEO_GUIDE.md
+docs/PROJECT_DESCRIPTION.md
+docs/SUBMISSION_PACKAGE.md
+docs/HACKATHON_SUBMISSION.md
+docs/PROJECT_OVERVIEW.md
+docs/REQUIREMENTS_CHECKLIST.md
+docs/WINNING_STRATEGY.md
+docs/FINAL_SUBMISSION_README.md
+docs/PROJECT_SUMMARY.txt
+docs/PHASE2_QUICK_REFERENCE.txt
+
+# Setup scripts (keep in repo for local testing)
+# scripts/ folder is included in GitHub
+
+# Old habit tracker files (not part of this project)
+habit tracker/
+acli.exe

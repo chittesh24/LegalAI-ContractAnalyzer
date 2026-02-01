@@ -1,0 +1,71 @@
+SERVICE AGREEMENT
+
+This Service Agreement is entered into on April 10, 2024
+
+BETWEEN:
+GreenLeaf Enterprises, a partnership firm registered in Chennai, Tamil Nadu ("Client")
+
+AND:
+Digital Marketing Solutions LLP, having office in Hyderabad, Telangana ("Service Provider")
+
+1. SERVICES
+The Service Provider shall provide digital marketing and social media management services as detailed in Annexure A.
+
+2. TERM
+This Agreement shall be effective from May 1, 2024 for an initial period of 12 months. Either party may choose to renew by mutual written consent 30 days before expiry.
+
+3. COMPENSATION
+3.1 Monthly retainer: Rs. 75,000 (Rupees Seventy Five Thousand only) plus applicable GST
+3.2 Payment due within 30 days of invoice
+3.3 Late payment interest: 1% per month after 30 day grace period
+
+4. TERMINATION
+4.1 Either party may terminate with 60 days written notice
+4.2 Termination for cause (material breach) requires 15 days notice and opportunity to cure
+4.3 Upon termination, Client shall pay for services rendered until termination date
+
+5. INTELLECTUAL PROPERTY
+5.1 Pre-existing IP of each party remains with that party
+5.2 New IP created specifically for Client campaigns shall belong to Client
+5.3 Service Provider retains right to use generic marketing materials and methodologies
+5.4 Service Provider may showcase work in portfolio with Client's consent
+
+6. CONFIDENTIALITY
+Both parties shall maintain confidentiality of proprietary information for 3 years post-termination. This excludes publicly available information and information required to be disclosed by law.
+
+7. LIABILITY AND INDEMNIFICATION
+7.1 Each party shall indemnify the other for breaches of this Agreement
+7.2 Total liability capped at 6 months of fees paid
+7.3 Neither party liable for indirect or consequential damages
+
+8. PERFORMANCE STANDARDS
+Service Provider shall use commercially reasonable efforts to achieve KPIs outlined in Annexure A. Failure to meet targets for 2 consecutive months allows Client to terminate without penalty.
+
+9. AMENDMENTS
+Any amendments must be in writing and signed by both parties. No unilateral changes permitted.
+
+10. DISPUTE RESOLUTION
+10.1 Disputes shall first be attempted to be resolved through good faith negotiations
+10.2 If unresolved within 30 days, parties may pursue mediation
+10.3 Arbitration in Chennai under Arbitration and Conciliation Act, 1996
+10.4 Each party bears own costs unless arbitrator decides otherwise
+
+11. FORCE MAJEURE
+Neither party liable for delays due to circumstances beyond reasonable control including natural disasters, strikes, or government actions. Affected party must notify within 7 days.
+
+12. INDEPENDENT CONTRACTOR
+Service Provider is an independent contractor, not an employee. Responsible for own taxes and compliance.
+
+13. GOVERNING LAW
+This Agreement shall be governed by Indian laws. Courts in Chennai shall have jurisdiction.
+
+14. ENTIRE AGREEMENT
+This Agreement and annexures constitute the complete agreement. Supersedes all prior discussions and understandings.
+
+AGREED AND ACCEPTED:
+
+For GreenLeaf Enterprises              For Digital Marketing Solutions LLP
+_____________________                  _____________________
+Name: Priya Sharma                     Name: Amit Verma
+Designation: Partner                   Designation: Managing Partner
+Date: April 10, 2024                   Date: April 10, 2024
