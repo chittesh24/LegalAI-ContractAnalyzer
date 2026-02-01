@@ -44,95 +44,85 @@ def show_template_section():
     st.subheader("Generate Custom Template")
     
     if selected_template == "Service Agreement":
-        with st.form("service_agreement_form"):
-            st.write("**Party Information:**")
-            col1, col2 = st.columns(2)
-            
-            with col1:
-                client_name = st.text_input("Client Name")
-                client_address = st.text_input("Client Address")
-            
-            with col2:
-                provider_name = st.text_input("Service Provider Name")
-                provider_address = st.text_input("Service Provider Address")
-            
-            st.write("**Contract Terms:**")
-            col1, col2, col3 = st.columns(3)
-            
-            with col1:
-                duration = st.text_input("Duration", value="12 months")
-                payment = st.text_input("Payment Amount", value="Rs. 50,000")
-            
-            with col2:
-                payment_days = st.number_input("Payment Terms (days)", value=30, min_value=15, max_value=90)
-                termination_notice = st.number_input("Termination Notice (days)", value=60, min_value=30, max_value=90)
-            
-            with col3:
-                jurisdiction = st.text_input("Jurisdiction (City)", value="Mumbai")
-                start_date = st.date_input("Start Date")
-            
-            scope = st.text_area("Scope of Services", height=100)
-            
-            submit = st.form_submit_button("Generate Template", type="primary", use_container_width=True)
-            
-            if submit:
-                parties = {
-                    "client": client_name,
-                    "client_address": client_address,
-                    "provider": provider_name,
-                    "provider_address": provider_address
-                }
+    with st.form("service_agreement_form"):
+        st.write("**Party Information:**")
+        col1, col2 = st.columns(2)
 
-                terms = {
-                    "date": start_date.strftime("%B %d, %Y"),
-                    "start_date": start_date.strftime("%B %d, %Y"),
-                    "duration": duration,
-                    "payment": payment,
-                    "payment_days": str(payment_days),
-                    "termination_notice": str(termination_notice),
-                    "jurisdiction": jurisdiction,
-                    "scope": scope if scope else "[DESCRIBE SERVICES IN DETAIL]"
-                }
+        with col1:
+            client_name = st.text_input("Client Name")
+            client_address = st.text_input("Client Address")
 
-                template = template_gen.generate_service_agreement(parties, terms)
-            
-                if isinstance(template, str) and template.strip():
-                    st.success("✅ Template Generated!")
-            
-                    safe_name = (client_name or "client").replace(" ", "_")
-            
-                    st.download_button(
-                        label="📥 Download Service Agreement",
-                        data=template.encode("utf-8"),
-                        file_name=f"service_agreement_{safe_name}.txt",
-                        mime="text/plain"
-                    )
-            
-                    with st.expander("📄 Preview Template"):
-                        st.text(template)
-            
-                else:
-                    st.error("Template generation failed.")
-            
-                            
-                            template = template_gen.generate_service_agreement(parties, terms)
+        with col2:
+            provider_name = st.text_input("Service Provider Name")
+            provider_address = st.text_input("Service Provider Address")
 
-                if isinstance(template, str) and template.strip():
-                    st.session_state.generated_template = template
-                    st.session_state.generated_filename = f"service_agreement_{(client_name or 'client').replace(' ', '_')}.txt"
-                    st.success("✅ Template Generated!")
-                else:
-                    st.error("Template generation failed.")
-                if "generated_template" in st.session_state:
-                    st.download_button(
-                        label="📥 Download Service Agreement",
-                        data=st.session_state.generated_template.encode("utf-8"),
-                        file_name=st.session_state.generated_filename,
-                        mime="text/plain"
-                    )
+        st.write("**Contract Terms:**")
+        col1, col2, col3 = st.columns(3)
 
-    with st.expander("📄 Preview Template"):
-        st.text(st.session_state.generated_template)
+        with col1:
+            duration = st.text_input("Duration", value="12 months")
+            payment = st.text_input("Payment Amount", value="Rs. 50,000")
+
+        with col2:
+            payment_days = st.number_input(
+                "Payment Terms (days)", value=30, min_value=15, max_value=90
+            )
+            termination_notice = st.number_input(
+                "Termination Notice (days)", value=60, min_value=30, max_value=90
+            )
+
+        with col3:
+            jurisdiction = st.text_input("Jurisdiction (City)", value="Mumbai")
+            start_date = st.date_input("Start Date")
+
+        scope = st.text_area("Scope of Services", height=100)
+
+        submit = st.form_submit_button(
+            "Generate Template", type="primary", use_container_width=True
+        )
+
+    if submit:
+        parties = {
+            "client": client_name,
+            "client_address": client_address,
+            "provider": provider_name,
+            "provider_address": provider_address,
+        }
+
+        terms = {
+            "date": start_date.strftime("%B %d, %Y"),
+            "start_date": start_date.strftime("%B %d, %Y"),
+            "duration": duration,
+            "payment": payment,
+            "payment_days": str(payment_days),
+            "termination_notice": str(termination_notice),
+            "jurisdiction": jurisdiction,
+            "scope": scope
+            if scope
+            else "[DESCRIBE SERVICES IN DETAIL]",
+        }
+
+        template = template_gen.generate_service_agreement(parties, terms)
+
+        if isinstance(template, str) and template.strip():
+            st.session_state.generated_template = template
+            st.session_state.generated_filename = (
+                f"service_agreement_{(client_name or 'client').replace(' ', '_')}.txt"
+            )
+            st.success("✅ Template Generated!")
+        else:
+            st.error("Template generation failed.")
+
+    if "generated_template" in st.session_state:
+        st.download_button(
+            label="📥 Download Service Agreement",
+            data=st.session_state.generated_template.encode("utf-8"),
+            file_name=st.session_state.generated_filename,
+            mime="text/plain",
+        )
+
+        with st.expander("📄 Preview Template"):
+            st.text(st.session_state.generated_template)
 
     
     elif selected_template == "NDA (Non-Disclosure Agreement)":
