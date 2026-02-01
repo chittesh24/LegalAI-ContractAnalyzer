@@ -3,29 +3,44 @@ LLM interface for advanced legal reasoning and analysis
 Supports both Anthropic Claude and OpenAI GPT-4
 """
 import os
+import streamlit as st
 from typing import Dict, List, Optional
 from config import LLM_PROVIDER, ANTHROPIC_API_KEY, OPENAI_API_KEY, LLM_MODEL, MAX_TOKENS, TEMPERATURE
 
 
 class LLMInterface:
-    """Interface for interacting with LLM providers for legal analysis"""
-    
     def __init__(self):
         self.provider = LLM_PROVIDER
         self.model = LLM_MODEL
-        
+
+        # Load API keys safely
+        anthropic_key = ANTHROPIC_API_KEY or st.secrets.get("ANTHROPIC_API_KEY")
+        openai_key = OPENAI_API_KEY or st.secrets.get("OPENAI_API_KEY")
+
         if self.provider == "anthropic":
             try:
                 import anthropic
-                self.client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+
+                if not anthropic_key:
+                    raise ValueError("Anthropic API key missing")
+
+                self.client = anthropic.Anthropic(api_key=anthropic_key)
+
             except ImportError:
                 raise ImportError("anthropic package not installed. Run: pip install anthropic")
+
         elif self.provider == "openai":
             try:
                 import openai
-                self.client = openai.OpenAI(api_key=OPENAI_API_KEY)
+
+                if not openai_key:
+                    raise ValueError("OpenAI API key missing")
+
+                self.client = openai.OpenAI(api_key=openai_key)
+
             except ImportError:
                 raise ImportError("openai package not installed. Run: pip install openai")
+
         else:
             raise ValueError(f"Unsupported LLM provider: {self.provider}")
     
