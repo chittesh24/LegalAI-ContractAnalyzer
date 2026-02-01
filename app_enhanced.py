@@ -95,17 +95,24 @@ def show_template_section():
                 }
                 
                 template = template_gen.generate_service_agreement(parties, terms)
-                
-                st.success("✅ Template Generated!")
-                st.download_button(
-                    label="📥 Download Service Agreement",
-                    data=template,
-                    file_name=f"service_agreement_{client_name.replace(' ', '_')}.txt",
-                    mime="text/plain"
-                )
-                
-                with st.expander("📄 Preview Template"):
-                    st.text(template)
+
+                if isinstance(template, str) and template.strip():
+                    st.session_state.generated_template = template
+                    st.session_state.generated_filename = f"service_agreement_{(client_name or 'client').replace(' ', '_')}.txt"
+                    st.success("✅ Template Generated!")
+                else:
+                    st.error("Template generation failed.")
+                if "generated_template" in st.session_state:
+                    st.download_button(
+                        label="📥 Download Service Agreement",
+                        data=st.session_state.generated_template.encode("utf-8"),
+                        file_name=st.session_state.generated_filename,
+                        mime="text/plain"
+                    )
+
+    with st.expander("📄 Preview Template"):
+        st.text(st.session_state.generated_template)
+
     
     elif selected_template == "NDA (Non-Disclosure Agreement)":
         with st.form("nda_form"):
