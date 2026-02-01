@@ -297,9 +297,9 @@ def show_knowledge_base_section():
                     st.info(f"**Impact:** {issue['impact']}")
                     st.success(f"**✓ Recommendation:** {issue['recommendation']}")
                     
-                    with st.expander("See Sample Clause"):
-                        st.code(issue['sample_clause'], language=None)
-                    
+                    st.markdown("**Sample Clause**")
+                    st.code(issue['sample_clause'], language=None)
+
                     st.markdown("---")
     else:
         # Show specific contract type
@@ -322,9 +322,9 @@ def show_knowledge_base_section():
                 st.info(f"**Impact:** {issue['impact']}")
                 st.success(f"**✓ Recommendation:** {issue['recommendation']}")
                 
-                with st.expander("See Sample Clause"):
-                    st.code(issue['sample_clause'], language=None)
-                
+               st.markdown("**Sample Clause**")
+                st.code(issue['sample_clause'], language=None)
+   
                 st.markdown("---")
         else:
             st.warning("No issues found for this contract type.")
