@@ -322,7 +322,7 @@ def show_knowledge_base_section():
                 st.info(f"**Impact:** {issue['impact']}")
                 st.success(f"**✓ Recommendation:** {issue['recommendation']}")
                 
-               st.markdown("**Sample Clause**")
+                st.markdown("**Sample Clause**")
                 st.code(issue['sample_clause'], language=None)
    
                 st.markdown("---")
