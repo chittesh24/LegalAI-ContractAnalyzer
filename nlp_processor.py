@@ -6,6 +6,23 @@ from typing import List, Dict, Tuple
 import spacy
 from spacy.matcher import Matcher
 import nltk
+# Ensure required NLTK data is available
+def _download_nltk_data():
+    required_packages = [
+        "punkt",
+        "punkt_tab",
+        "stopwords",
+        "wordnet",
+        "omw-1.4"
+    ]
+
+    for pkg in required_packages:
+        try:
+            nltk.data.find(pkg)
+        except LookupError:
+            nltk.download(pkg, quiet=True)
+
+_download_nltk_data()
 from nltk.tokenize import sent_tokenize
 from config import INDIAN_LAW_KEYWORDS
 
