@@ -283,21 +283,11 @@ MIT License - See LICENSE file for details
 ## 📞 Contact
 
 **Project:** LegalAI ContractAnalyzer  
-**GitHub:** [Your Repository URL]  
-**Demo:** [Your Live URL]  
-**Video:** [Your YouTube URL]  
+**GitHub:** https://github.com/chittesh24/ 
+**Demo:** https://aicontractanalyzer-q45dyqcf69omb.streamlit.app/
+**Created by:** Chittesh S  
+**Email:** chittesh.work@gmail.com  
 
-**Created by:** [Your Name]  
-**Email:** [Your Email]  
-
----
-
-## 🏆 Hackathon Submission
-
-**Problem Statement:** #174 - Contract Analysis & Risk Assessment Bot (174/1000)  
-**Status:** Production-ready, live demo available  
-**Completion:** 100% requirements + bonus features  
-**Confidence:** 95% to advance  
 
 ---
 
